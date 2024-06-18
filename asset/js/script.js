@@ -49,9 +49,8 @@ function clearAll() {
     document.querySelector("#groesse").value = "";
     document.querySelector("#alter").value = "";
     document.querySelector("#gewicht").value = "";
-    document.querySelectorAll("tabelle p").value = "0";
-    // document.querySelector(".kcal-grund").value = "0";
-    // document.querySelector(".kcal-gesamt").value = "0";
-    // document.querySelector(".kj-grund").value = "0";
-    // document.querySelector(".kj-gesamt").value = "0";
+    document.querySelector(".kcal-grund").innerText = "0";
+    document.querySelector(".kcal-gesamt").innerText = "0";
+    document.querySelector(".kj-grund").innerText = "0";
+    document.querySelector(".kj-gesamt").innerText = "0";
 }
