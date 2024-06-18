@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
 /* BASIC STYLING */
 
 * {
@@ -16,7 +21,7 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: montserrat;
     font-size: 18px;
     color: rgb(63, 63, 63);
 }
@@ -26,7 +31,7 @@ body {
 /* ! MAIN */
 
 section {
-    background-color: rgb(194, 193, 193);
+    background-color: rgb(223, 221, 221);
     width: 25vw;
     border-radius: 10px;
     padding: 20px;
@@ -36,9 +41,11 @@ section {
 
 h1 {
     margin-bottom: 10px;
+    font-size: 30p;
 }
 .user-data label {
     display: block;
+    margin-bottom: 5px;
 }
 
 .user-data input {
@@ -46,9 +53,16 @@ h1 {
     border-radius: 3px;
     border: 1px solid gray;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 18px;
     padding-left: 10px;
+}
+
+.user-data input::placeholder {
+    color: rgb(182, 178, 178);
+    font-family: montserrat;
+    font-weight: 200;
+    font-size: 14px;
 }
 
 #women,
@@ -72,14 +86,14 @@ article select {
     padding-left: 10px;
     height: 30px;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: montserrat;
 }
 
 .btn {
     background-color: rgb(138, 43, 227);
     border: none;
     color: white;
-
     height: 35px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -87,6 +101,7 @@ article select {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 100;
+    font-family: montserrat;
 }
 .tabelle {
     display: grid;
