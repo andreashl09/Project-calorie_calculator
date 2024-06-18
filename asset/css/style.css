@@ -79,10 +79,12 @@ input[type="radio"]:checked {
 #women,
 #men {
     margin-right: 5px;
+    margin-bottom: 15px;
 }
 
-.auswahl {
+.auswahl label {
     margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 article select,
 article button {
