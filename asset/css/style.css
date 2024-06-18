@@ -20,10 +20,11 @@ a {
     color: black;
 }
 
-body {
+html {
     font-family: montserrat;
-    font-size: 18px;
-    color: rgb(63, 63, 63);
+    font-size: 10px;
+    color: #120052;
+    /* color: rgb(63, 63, 63); */
 }
 
 /* ! HEADER */
@@ -36,7 +37,7 @@ body {
 
 section {
     background-color: rgb(231, 228, 228);
- width: 25vw;
+    width: 350px;
     border-radius: 10px;
     padding: 20px;
     margin: 50px auto;
@@ -45,11 +46,14 @@ section {
 
 h1 {
     margin-bottom: 30px;
-    font-size: 36px;
+    font-size: 3.6rem;
+    color: #120052;
+    /* color: #b537f2; */
 }
 .user-data label {
     display: block;
     margin-bottom: 5px;
+    font-size: 1.4rem;
 }
 
 .user-data input {
@@ -58,7 +62,7 @@ h1 {
     border: 1px solid rgb(138, 43, 227);
     height: 30px;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 1.4rem;
     padding-left: 10px;
 }
 input[type="radio"]:checked {
@@ -69,7 +73,7 @@ input[type="radio"]:checked {
     color: rgb(182, 178, 178);
     font-family: montserrat;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 
 #women,
@@ -92,7 +96,7 @@ article select {
     margin-bottom: 5px;
     padding-left: 10px;
     height: 30px;
-    font-size: 18px;
+    font-size: 1.4rem;
     margin-bottom: 30px;
     font-family: montserrat;
     border: 1px solid rgb(138, 43, 227);
@@ -107,7 +111,7 @@ article select {
     margin-bottom: 20px;
     width: 100%;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1.4rem;
     font-weight: 100;
     font-family: montserrat;
 }
@@ -116,11 +120,13 @@ article select {
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        ". kcal kj" "grundumsatz kcal-grund kj-grund"
+        "headline-table kcal kj" "grundumsatz kcal-grund kj-grund"
         "gesamtumsatz kcal-gesamt kj-gesamt";
-    /* background-color: rgb(159, 87, 222); */
+    background-color: rgb(159, 87, 222);
     color: white;
     margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 1.4rem;
 }
 
 .background {
@@ -130,10 +136,14 @@ article select {
     padding: 10px;
 }
 
+.headline-table {
+    grid-area: headline-table;
+    background-color: rgb(138, 43, 227);
+    border-top-left-radius: 5px;
+}
 .kcal {
     grid-area: kcal;
     background-color: rgb(138, 43, 227);
-    border-top-left-radius: 5px;
 }
 
 .kj {
