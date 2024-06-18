@@ -30,9 +30,13 @@ body {
 
 /* ! MAIN */
 
+.border {
+    border: 1px solid rgb(159, 87, 222);
+}
+
 section {
     background-color: rgb(231, 228, 228);
-    width: 25vw;
+ width: 25vw;
     border-radius: 10px;
     padding: 20px;
     margin: 50px auto;
@@ -40,8 +44,8 @@ section {
 }
 
 h1 {
-    margin-bottom: 10px;
-    font-size: 30px;
+    margin-bottom: 30px;
+    font-size: 36px;
 }
 .user-data label {
     display: block;
@@ -51,11 +55,14 @@ h1 {
 .user-data input {
     width: 100%;
     border-radius: 3px;
-    border: 1px solid gray;
+    border: 1px solid rgb(138, 43, 227);
     height: 30px;
     margin-bottom: 15px;
     font-size: 18px;
     padding-left: 10px;
+}
+input[type="radio"]:checked {
+    accent-color: rgb(138, 43, 227);
 }
 
 .user-data input::placeholder {
@@ -88,6 +95,7 @@ article select {
     font-size: 18px;
     margin-bottom: 30px;
     font-family: montserrat;
+    border: 1px solid rgb(138, 43, 227);
 }
 
 .btn {
