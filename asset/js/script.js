@@ -25,23 +25,23 @@ function kalorienBerechnen() {
                 655.1 + 9.6 * weightInput + 1.8 * heightInput - 4.7 * ageInput;
         }
         calorien = Math.round(calorien);
+
+        let sumCalorien = Math.round(calorien * palFactor);
+        const kJFactor = 4.1868;
+
+        if (calorien != 0) {
+            const kcalOutput = document.querySelector(".kcal-grund");
+            const kcalAllOutput = document.querySelector(".kcal-gesamt");
+            const kjOutput = document.querySelector(".kj-grund");
+            const kjAllOutput = document.querySelector(".kj-gesamt");
+
+            kcalOutput.innerText = `${calorien}`;
+            kcalAllOutput.innerText = `${sumCalorien}`;
+            kjOutput.innerText = `${Math.round(calorien * kJFactor)}`;
+            kjAllOutput.innerText = `${Math.round(sumCalorien * kJFactor)}`;
+        }
     } else {
         window.alert("Formular vollständig ausfüllen");
-    }
-
-    let sumCalorien = Math.round(calorien * palFactor);
-    const kJFactor = 4.1868;
-
-    if (calorien != 0) {
-        const kcalOutput = document.querySelector(".kcal-grund");
-        const kcalAllOutput = document.querySelector(".kcal-gesamt");
-        const kjOutput = document.querySelector(".kj-grund");
-        const kjAllOutput = document.querySelector(".kj-gesamt");
-
-        kcalOutput.innerText = `${calorien}`;
-        kcalAllOutput.innerText = `${sumCalorien}`;
-        kjOutput.innerText = `${Math.round(calorien * kJFactor)}`;
-        kjAllOutput.innerText = `${Math.round(sumCalorien * kJFactor)}`;
     }
 }
 
@@ -53,4 +53,5 @@ function clearAll() {
     document.querySelector(".kcal-gesamt").innerText = "0";
     document.querySelector(".kj-grund").innerText = "0";
     document.querySelector(".kj-gesamt").innerText = "0";
+    document.getElementById("selectActivity").selectedIndex = 0;
 }
