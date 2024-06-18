@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <title>Kalorienrechner</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <article>
+                    <h1>Kalorienrechner</h1>
+                    <div class="user-data">
+                        <label for="groesse">Körpergröße in cm</label>
+                        <input type="number" id="groesse" />
+                        <label for="alter">Alter</label>
+                        <input type="number" id="alter" />
+                        <label for="gewicht">Gewicht</label>
+                        <input type="number" id="gewicht" />
+                    </div>
+                    <div class="auswahl">
+                        <input
+                            type="radio"
+                            name="geschlecht"
+                            id="man"
+                            value="man"
+                            checked
+                        />
+                        <label for="man">männlich</label>
+                        <input
+                            type="radio"
+                            name="geschlecht"
+                            id="women"
+                            value="woman"
+                        /><label for="women">weiblich</label>
+                    </div>
+
+                    <select name="" id="">
+                        <option value="0.95">schlafen</option>
+                        <option value="1.2">nur sitzend oder liegend</option>
+                        <option value="1.5">
+                            sitzend, kaum körperliche Aktivität
+                        </option>
+                        <option value="1.7">
+                            überwiegend sitzend, gehend und stehend
+                        </option>
+                        <option value="1.9">
+                            hauptsächlich stehend und gehend
+                        </option>
+                        <option value="2.2">
+                            körperlich anstrengende Arbeit
+                        </option>
+                    </select>
+                    <button class="btn" onclick="kalorienBerechnen()">
+                        Berechnen
+                    </button>
+                </article>
+                <article class="tabelle">
+                    <p class="kcal">kcal</p>
+                    <p class="kj">kJ</p>
+                    <p class="grundumsatz background">Grundumsatz</p>
+                    <p class="gesamtumsatz background">Gesamtumsatz</p>
+                    <p class="kcal-grund background-grid">0</p>
+                    <p class="kcal-gesamt background-grid">0</p>
+                    <p class="kj-grund background-grid">0</p>
+                    <p class="kj-gesamt background-grid">0</p>
+                </article>
+                <button class="btn" type="button" onclick="clearAll()">
+                    Clear all
+                </button>
+            </section>
+        </main>
+        <script src="./asset/js/script.js"></script>
+    </body>
+</html>
